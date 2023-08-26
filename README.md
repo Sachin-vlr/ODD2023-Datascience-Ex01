@@ -20,7 +20,7 @@ Save the Clean data to the file
 
 # CODE 
 
-#Loan Data csv
+# Loan Data csv
 ```python
 import pandas as pd
 df=pd.read_csv("/Loan_data.csv")
@@ -45,7 +45,7 @@ df.head()
 df.info()
 df.isnull().sum()
 ```
-#DATA SET CSV
+# DATA SET CSV
 
 ```python
 import pandas as pd
@@ -104,7 +104,7 @@ df.head()
 ```
 ![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex01/assets/113497666/f13e602f-5d24-41f1-8916-e4e04819c56a)
 
-#MEAN
+# MEAN
 
 ```python
 df['ApplicantIncome']=df['ApplicantIncome'].fillna(df['ApplicantIncome'].mean())
@@ -140,7 +140,7 @@ df.isnull().sum()
 
 # FOR DATASET
 
-#DATA
+# DATA
 
 ```python
 import pandas as pd
