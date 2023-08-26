@@ -74,7 +74,7 @@ df.isnull().sum()
 
 # OUTPUT
 
-#DATA
+# DATA
 
 ```python
 import pandas as pd
@@ -92,7 +92,7 @@ df.info()
 ```
 ![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex01/assets/113497666/fb3cc145-326d-4b02-80b7-9f9abc7b4def)
 
-#MODE
+# MODE
 
 ```python
 df['Loan_ID']=df['Loan_ID'].fillna(df['Dependents'].mode()[0])
@@ -148,6 +148,76 @@ df=pd.read_csv("/Data_set.csv")
 print(df)
 df.head(10)
 ```
-![Uploading image.png…]()
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex01/assets/113497666/98c31ca9-af94-4e47-8aa6-c7d4740883be)
 
-![Uploading image.png…]()
+# NON NULL BEFORE
+
+```python
+df.info()
+```
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex01/assets/113497666/a6db4ddb-97e7-4da7-aff2-63e84881a976)
+
+```python
+df.isnull()
+```
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex01/assets/113497666/08693461-8b5c-430d-b1e9-9267dad106b3)
+
+# MODE
+
+```python
+df['show_name']=df['show_name'].fillna(df['aired_on'].mode()[0])
+df['aired_on']=df['aired_on'].fillna(df['aired_on'].mode()[0])
+df['original_network']=df['original_network'].fillna(df['aired_on'].mode()[0])
+df.head()
+```
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex01/assets/113497666/e3195f97-cba9-4f6a-b52b-4e9653af3206)
+
+# MODE
+
+```python
+df['show_name']=df['show_name'].fillna(df['aired_on'].mode()[0])
+df['aired_on']=df['aired_on'].fillna(df['aired_on'].mode()[0])
+df['original_network']=df['original_network'].fillna(df['aired_on'].mode()[0])
+df.head()
+```
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex01/assets/113497666/53c8ca1a-46f4-40f8-8b22-5d4caf2bbfab)
+
+# MEAN
+
+```python
+df['rating']=df['rating'].fillna(df['rating'].mean())
+df['current_overall_rank']=df['current_overall_rank'].fillna(df['current_overall_rank'].mean())
+df.head()
+```
+
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex01/assets/113497666/977d5721-138f-4868-ac74-e3d62b9132c7)
+
+# MEDIAN
+
+```python
+df['watchers']=df['watchers'].fillna(df['watchers'].median())
+df.head()
+```
+
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex01/assets/113497666/9d00ae95-93cf-488e-842c-1790f22e8d44)
+
+# NON NULL AFTER
+
+```python
+df.info()
+```
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex01/assets/113497666/9aca3a3e-4322-4464-8612-4bde664986d0)
+
+```python
+df.isnull()
+```
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex01/assets/113497666/6becc5b2-a332-4b98-8fd6-601992819917)
+
+```python
+df.isnull().sum()
+```
+![image](https://github.com/Sachin-vlr/ODD2023-Datascience-Ex01/assets/113497666/ef72183e-23fc-42ac-bb7c-d3864525f625)
+
+# RESULT
+Thus,the given data is read,cleansed and the cleaned data is saved into the file.
+
